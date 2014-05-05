@@ -2,6 +2,11 @@
 #include <assert.h>
 #include <stdlib.h>
 
+// 单链表的逆置
+// from: 1->2->3->4
+// to:   1<-2<-3<-4
+
+
 struct node{
 	int key;
 	struct node *next;
@@ -27,8 +32,10 @@ struct node * create_list()
 
 	printf("Please input the length of the list:");
 	scanf("%d", &length);
-	if(length <= 0)
+	if(length <= 0){
+		printf("length must be bigger than 0");
 		return NULL;
+	}
 
 	printf("Please input %d int key:\n", length);
 
