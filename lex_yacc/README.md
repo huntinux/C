@@ -8,6 +8,10 @@ now you can run wordcount
 $ ./wordcount
 ```
 
+Requirement
+-----------
+* bison  `sudo apt-get install bison`
+
 Reference
 ---------
 * http://www.ibm.com/developerworks/cn/linux/sdk/lex/
