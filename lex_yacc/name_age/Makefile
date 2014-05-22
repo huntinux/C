@@ -13,5 +13,6 @@ $(YACC_FILE):name.y
 $(LEX_FILE):name.lex
 	lex $<
 
+.PHONY: clean
 clean:
 	rm $(YACC_FILE) $(LEX_FILE) $(APP)
